@@ -1,1 +1,1 @@
-web: gunicorn "portfolio"
+web: gunicorn "portfolio:__init__.py"
