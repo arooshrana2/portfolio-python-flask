@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    /* border: dashed 0.5px red; */
+}
+
+html{
+    font-family: 'Tajawal', sans-serif;
+}
+
+body{
+    margin-top: 90px;
+}
+
+.italics{
+    font-style: italic;
+    font-size: large;
+}
+
+.font-type-corsiva{
+    font-family: 'Monotype-Corsiva';
+}
+
+.header{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.nav{
+    color: rgb(0,0,255);
+}
+
+.nav__link{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.nav__link--active,
+.nav__link:hover{
+    font-weight: bold;
+}
+
+.nav__link:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.owner-info{
+    margin-bottom: 5rem;
+}
+
+.owner-img{
+    max-height: 20rem;
+    border-radius: 15px;
+}
+
+.main{
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.main--about{
+    flex-direction: column;
+    max-width: 40rem;
+    padding: 1rem;
+    line-height: 150%;
+}
+
+.motto{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.main--contact{
+    padding: 1rem;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact--details{
+    margin-left: 1ch;
+}
+
+.contact--link{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    box-shadow: 0px 2px 0px 0px #000;
+}
+
+.contact--link:hover{
+    color: rgb(0, 0, 255);
+    font-weight: bold;
+    box-shadow: 0px 2px 0px 0px #0000ff;
+}
+
+.link-to-page{
+    text-decoration: none;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+    column-gap: 1.25rem;
+    justify-content: center;
+    justify-items: center;
+    width: 18rem;
+    height: 50rem;
+    margin: 2rem auto 0;
+}
+
+/* .grid-icon{
+    justify-content: center;
+} */
+
+.project-page{
+    margin: 0% 25%;
+}
+
+.project_section{
+    width: 18rem;
+    height: 12rem;
+    text-decoration: none;
+}
+
+.project__image{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+.project:hover .project__image{
+    transform: translateY(-0.5rem) ;
+}
+
+.project__name{
+    text-align: left;
+}
+
+.project-lang__list{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0.75rem 0 0 0;
+}
+
+.project-lang__list__item:not(:last-of-type)::after{
+    content: '|';
+    margin: 0 0.25rem;
+}
+
+.link-to-page:hover{
+    text-decoration: underline;
+    color: #26a88c;
+}
+
+@media (max-width: 50rem){
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.hero{
+    width: 100%;
+    height: 60%;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+}
+
+.project{
+    display: flex;
+    flex-direction: row;
+    max-width: 60rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.project__content{
+    margin-bottom: 1rem;
+    line-height: 150%;
+    flex: 7;
+    margin-right: 3rem;
+}
+
+@media(max-width:50rem){
+    .project{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .project__meta{
+        width: 17rem;
+    }
+}
+
+.project__heading{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 150%;
+}
+
+.project__heading--meta{
+    font-size: inherit;
+    margin-bottom: 1rem;
+}
+
+.project__meta-group{
+    margin-bottom: 2rem;
+}
+
+.project__meta-group,
+.cta{
+    background-color: #d4eafa;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #1c2023;
+}
+
+.cta:hover{
+    text-decoration: underline;
+}
+
+.cta__icon{
+    margin-right: 0.5rem;
+    transform: translateY(-1px);
+}
+
+.technology-list{
+    list-style: none;
+    line-height: 150%;
+    margin: 0;
+    padding-left: 0.75rem;
+}
+
+.technology-list__item:before{
+    content: "";
+    background-image: url('/static/images/list-check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    transform: translateY(2px);
+    margin-right: 0.5rem;
+}
+
+.project__link{
+    /* text-decoration: none; */
+    font: bold;
+    /* color: rgb(0, 255, 0);  */
+}
+
+.github-icon-inline-image{
+    height: 1.25rem;
+    width: 1.25rem;
+    transform: translateY(4px);
+}

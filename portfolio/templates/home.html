@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="grid">
+    {% for project in projects %}
+        <section class="grid-icon">
+            <a class="link-to-page" href="{{ url_for('project_page', slug=project['slug']) }}">
+                <article class="project_section">
+                    <img src="{{ url_for('static', filename=project['thumb']) }}"
+                    alt="{{ project['thumb'] }} hero image"
+                    class="project__image"/>
+                    <header class="project__meta">
+                        <ul class="project-lang__list">
+                            {% for category in project['categories'] %}
+                            <li class="project-lang__list__item">{{ category }}</li>
+                            {% endfor %}
+                        </ul>
+                        <h2 class="project__name">
+                            {{ project['name'] }}
+                        </h2>
+                    </header>
+                </article>
+            </a>
+        </section>
+    {% endfor %}
+</main>
+{% endblock %}
