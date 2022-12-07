@@ -12,7 +12,7 @@ def create_app():
             "hero": "images/habit-tracker.jpg",
             "categories": ["python", "flask", "html", "css"],
             "slug": "habit-tracking",
-            "prod": "https://custom-habit-tracker.herokuapp.com",
+            "prod": "https://ar-habit-tracker.onrender.com/",
             "code": "https://github.com/arooshrana2/habit-tracker"
         },
         {
@@ -21,7 +21,7 @@ def create_app():
             "hero": "images/micro-blog-hero.jpg",
             "categories": ["python", "flask", "html", "css"],
             "slug": "micro-blog",
-            "prod": "http://microblog-python-flask.herokuapp.com",
+            "prod": "https://ar-microblog.onrender.com/",
             "code": "https://github.com/arooshrana2/microblog-python-flask"
         },
     ]
